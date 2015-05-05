@@ -100,6 +100,16 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
             let event = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Event
         cell.textLabel!.text = event.timeStamp.description
+        
+        let color = UIColor(red: self.randomColorComponent(), green: self.randomColorComponent(), blue: self.randomColorComponent(), alpha: 1)
+        
+        cell.textLabel!.textColor = color
+    }
+    
+    //MARK: - Helpers
+    
+    func randomColorComponent() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(0x100000000)
     }
 
     // MARK: - Fetched results controller
