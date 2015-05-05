@@ -15,6 +15,7 @@
 		4F935A901AF9318000F2816B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F935A8F1AF9318000F2816B /* Images.xcassets */; };
 		4F935A931AF9318000F2816B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F935A911AF9318000F2816B /* LaunchScreen.xib */; };
 		4F935A9F1AF9318100F2816B /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F935A9E1AF9318100F2816B /* CoreDataDemoTests.swift */; };
+		4F935AA91AF9398400F2816B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F935AA81AF9398400F2816B /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4F935A981AF9318100F2816B /* CoreDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F935A9D1AF9318100F2816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F935A9E1AF9318100F2816B /* CoreDataDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoTests.swift; sourceTree = "<group>"; };
+		4F935AA81AF9398400F2816B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		4F935A801AF9318000F2816B /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4F935AA81AF9398400F2816B /* Event.swift */,
 				4F935A831AF9318000F2816B /* AppDelegate.swift */,
 				4F935A881AF9318000F2816B /* MasterViewController.swift */,
 				4F935A8A1AF9318000F2816B /* DetailViewController.swift */,
@@ -222,6 +225,7 @@
 				4F935A871AF9318000F2816B /* CoreDataDemo.xcdatamodeld in Sources */,
 				4F935A891AF9318000F2816B /* MasterViewController.swift in Sources */,
 				4F935A8B1AF9318000F2816B /* DetailViewController.swift in Sources */,
+				4F935AA91AF9398400F2816B /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
