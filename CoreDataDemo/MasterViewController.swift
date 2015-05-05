@@ -38,6 +38,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
              
         
         event.timeStamp = NSDate()
+        event.red = self.randomColorComponent()
+        event.green = self.randomColorComponent()
+        event.blue = self.randomColorComponent()
              
         // Save the context.
         var error: NSError? = nil
@@ -101,15 +104,16 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let event = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Event
         cell.textLabel!.text = event.timeStamp.description
         
-        let color = UIColor(red: self.randomColorComponent(), green: self.randomColorComponent(), blue: self.randomColorComponent(), alpha: 1)
+        
+        let color = UIColor(red: CGFloat(event.red), green: CGFloat(event.green), blue: CGFloat(event.blue), alpha: 1)
         
         cell.textLabel!.textColor = color
     }
     
     //MARK: - Helpers
     
-    func randomColorComponent() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(0x100000000)
+    func randomColorComponent() -> Float {
+        return Float(arc4random()) / Float(0x100000000)
     }
 
     // MARK: - Fetched results controller
