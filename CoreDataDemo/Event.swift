@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class Event: NSManagedObject {
 
@@ -16,4 +17,14 @@ class Event: NSManagedObject {
     @NSManaged var blue: Float
     @NSManaged var green: Float
 
+    var color : UIColor {
+        get {
+            return UIColor(
+            red: CGFloat(self.red),
+            green: CGFloat(self.green),
+            blue: CGFloat(self.blue),
+            alpha: 1
+            )
+        }
+    }
 }

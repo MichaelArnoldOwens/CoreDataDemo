@@ -105,9 +105,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         cell.textLabel!.text = event.timeStamp.description
         
         
-        let color = UIColor(red: CGFloat(event.red), green: CGFloat(event.green), blue: CGFloat(event.blue), alpha: 1)
+//        let color = UIColor(red: CGFloat(event.red), green: CGFloat(event.green), blue: CGFloat(event.blue), alpha: 1)
         
-        cell.textLabel!.textColor = color
+        cell.textLabel!.textColor = event.color
     }
     
     //MARK: - Helpers
